@@ -26,4 +26,10 @@ This is a POC showcasing automation and assistance in generating QR Codes to pay
   - Typescript
   - tailwind
   - v0.dev
-  - 
+
+
+## Usage
+Make it a docker image and test it, or host it yourself by running  
+```sh
+pnpm i && pnpm build && pnpm start
+```
