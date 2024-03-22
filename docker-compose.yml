@@ -1,8 +1,8 @@
 version: "3"
 services:
-  server:
-    container_name: qrbot
+  porez:
+    container_name: qrporez
     ports:
-      - 3000:3000
+      - 80:3000
     # build: .
-    image: lukacolic/qrbot
+    image: docker.io/lukacolic/qrporez
