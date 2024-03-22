@@ -1,19 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
 First, run the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+docker build ./ -t <username>/<reponame>
+```
+docker-compose.yml
+```yml
+ports:
+      - 3000:3000
+    image: <username>/<reponame> # Change this to accomodate your image name and tag
 ```
 
+```bash
+docker compose up -d
+```
 
 # Info
 
