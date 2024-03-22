@@ -60,7 +60,9 @@ export async function GrabFetchData (previousState: any, formData: FormData) {
   const { launch } = puppeteer
   try {
     const browser = await launch({
-      headless: true
+      executablePath: '/usr/bin/google-chrome',
+      headless: true,
+      args: ['--no-sandbox', '--disable-setuid-sandbox'],
     })
     lpa.state = 'browser launch'
     console.log('launch')
