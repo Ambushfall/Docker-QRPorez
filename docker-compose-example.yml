@@ -1,0 +1,8 @@
+version: "3"
+services:
+  porez:
+    container_name: qrporez
+    ports:
+      - 80:3000
+    # build: .
+    image: <username>/<imagename>
