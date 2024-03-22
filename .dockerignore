@@ -1,0 +1,7 @@
+node_modules
+.next
+dockerfile
+.dockerignore
+.git
+.gitignore
+.git*

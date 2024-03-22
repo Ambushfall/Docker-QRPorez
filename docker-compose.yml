@@ -1,0 +1,8 @@
+version: "3"
+services:
+  server:
+    container_name: qrbot
+    ports:
+      - 3000:3000
+    # build: .
+    image: lukacolic/qrbot
