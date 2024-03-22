@@ -5,7 +5,15 @@ First, run the development server:
 ```bash
 docker build ./ -t <username>/<reponame>
 ```
+
+docker run
+
+```bash
+docker build -t <username>/<reponame> . && docker run -p <yourPort>:3000 <username>/<reponame>
+```
+
 docker-compose.yml
+
 ```yml
 ports:
       - 3000:3000
@@ -28,9 +36,10 @@ This is a POC showcasing automation and assistance in generating QR Codes to pay
   - tailwind
   - v0.dev
 
-
 ## Usage
-Make it a docker image and test it, or host it yourself by running  
+
+Make it a docker image and test it, or host it yourself by running
+
 ```sh
 pnpm i && pnpm build && pnpm start
 ```
